@@ -1,4 +1,4 @@
-name: mi-azure-functions
+name: chart-hmi-pactbroker
 trigger:
   branches:
     include:
@@ -24,8 +24,8 @@ jobs:
   steps:
   - template: steps/charts/release.yaml@cnp-library
     parameters:
-      chartName: mi-azure-functions
-      chartReleaseName: mi-azure-functions
+      chartName: hmi-pactbroker
+      chartReleaseName: hmi-pactbroker
       chartNamespace: chart-tests
       serviceConnection: "DCD-CFTAPPS-SBOX"
       aksResourceGroup: "cft-sbox-00-rg"
